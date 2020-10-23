@@ -53,7 +53,7 @@
             this.playGround.Dock = System.Windows.Forms.DockStyle.Fill;
             this.playGround.Location = new System.Drawing.Point(0, 0);
             this.playGround.Name = "playGround";
-            this.playGround.Size = new System.Drawing.Size(800, 450);
+            this.playGround.Size = new System.Drawing.Size(982, 703);
             this.playGround.TabIndex = 0;
             // 
             // button1
@@ -111,7 +111,7 @@
             // paddleImage
             // 
             this.paddleImage.BackColor = System.Drawing.Color.Black;
-            this.paddleImage.Location = new System.Drawing.Point(284, 418);
+            this.paddleImage.Location = new System.Drawing.Point(383, 671);
             this.paddleImage.Name = "paddleImage";
             this.paddleImage.Size = new System.Drawing.Size(200, 20);
             this.paddleImage.TabIndex = 0;
@@ -126,7 +126,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(982, 703);
             this.Controls.Add(this.playGround);
             this.Name = "gameForm";
             this.Text = "Ping Pong Game";

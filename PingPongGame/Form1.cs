@@ -13,8 +13,8 @@ namespace PingPongGame
     public partial class gameForm : Form
     {
 
-        public int speed_left = 4;
-        public int speed_top = 4;
+        public int speed_left = 5;
+        public int speed_top = 5;
         public int points = 0;
         public bool gameStart = true;
         public bool gameOver = false;
@@ -27,10 +27,10 @@ namespace PingPongGame
             this.FormBorderStyle = FormBorderStyle.None;
 
             //Makes it the front app all the time
-            this.TopMost = true;
+            //this.TopMost = true;
 
             //Makes the game screen the size of the respective computer screen
-            this.Bounds = Screen.PrimaryScreen.Bounds;
+            //this.Bounds = Screen.PrimaryScreen.Bounds;
 
             //Sets the right position for the game over screen, start button and paddle based on the size of the screen
             paddleImage.Top = playGround.Bottom - (playGround.Bottom / 10);
@@ -60,8 +60,7 @@ namespace PingPongGame
             bool ballCollideWithPaddle = ballCollideWithPaddleX && ballCollideWithPaddleY;
             if (ballCollideWithPaddle)
             {
-                speed_left += 1;
-                speed_top += 1;
+
                 speed_top *= -1;
 
                 points += 100;
@@ -124,6 +123,7 @@ namespace PingPongGame
         {
             if (gameStart)
             {
+                //Just what happens after clicking the button to start the game
                 gameTime.Enabled = true;
                 button1.Visible = false;
                 Cursor.Hide();
